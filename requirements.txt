@@ -1,0 +1,11 @@
+langchain
+transformers
+sqlalchemy
+psycopg2
+python-dotenv
+streamlit             
+ragas                 
+jupyterlab 
+google-generativeai 
+langchain-experimental
+huggingface-hub
