@@ -1,7 +1,7 @@
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 import torch
 
-MODEL_NAME = "evoreign/GRPO-vllm-Meta-Llama-3.1-8B-Instruct-indonesian-legal-finetune"
+MODEL_NAME = "evoreign/vllm-gemma-3-12b-Instruct-indonesian-legal-finetune"
 
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 
