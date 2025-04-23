@@ -1,14 +1,14 @@
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 import torch
 
-MODEL_NAME = "kalisai/Nusantara-1.8b-Indo-Chat"
+MODEL_NAME = "evoreign/GRPO-vllm-Meta-Llama-3.1-8B-Instruct-indonesian-legal-finetune"
 
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 
 model = AutoModelForCausalLM.from_pretrained(
     MODEL_NAME,
     torch_dtype=torch.float32,          # float32 aman di CPU
-    device_map="cpu",                   # pakai CPU, bukan GPU
+    device_map="auto",                   # pakai CPU, bukan GPU
     low_cpu_mem_usage=True              # hemat RAM
 )
 

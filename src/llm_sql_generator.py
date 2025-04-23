@@ -1,4 +1,4 @@
-from src.hf_nusantara_llm import infer
+from hf_evoreign_llm import infer
 from database.db_connection import engine
 from sqlalchemy import text
 import re

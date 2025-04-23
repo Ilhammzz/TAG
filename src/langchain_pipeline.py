@@ -1,5 +1,5 @@
 from src.llm_sql_generator import generate_sql_and_result
-from src.hf_nusantara_llm import infer  # ganti dari Gemini
+from hf_evoreign_llm import infer  # ganti dari Gemini
 
 def process_question(question: str) -> str:
     try:
